@@ -5,6 +5,7 @@ import torch.nn.functional as F
 res_block_nums = [2, 2, 4, 1]
 channel_nums = [48, 96, 192, 384]
 avg_pool_kernel_size = 4
+
 class BasicBlock(nn.Module):
 
     def __init__(self, in_planes, planes, stride=1):
